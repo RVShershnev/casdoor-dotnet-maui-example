@@ -39,7 +39,7 @@ builder.Services.AddSingleton(new CasdoorClient(new()
     Scope = "openid profile email",
 
 #if WINDOWS
-RedirectUri = "http://localhost/callback"
+    RedirectUri = "http://localhost/callback"
 #else
     RedirectUri = "casdoor://callback"
 #endif

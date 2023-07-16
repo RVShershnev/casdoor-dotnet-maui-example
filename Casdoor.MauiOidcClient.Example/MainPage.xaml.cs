@@ -1,6 +1,4 @@
-﻿using IdentityModel.OidcClient;
-
-namespace Casdoor.MauiOidcClient.Example
+﻿namespace Casdoor.MauiOidcClient.Example
 {
     public partial class MainPage : ContentPage
     {
@@ -50,7 +48,6 @@ namespace Casdoor.MauiOidcClient.Example
         private async void OnLogoutClicked(object sender, EventArgs e)
         {
             var logoutResult = await client.LogoutAsync(acsessToken);
-
 
             if (!logoutResult.IsError)
             {
