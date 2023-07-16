@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casdoor.MauiOidcClient.Example.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <StackLayout
+                x:Name="LoginView">
+                <Button 
+                    x:Name="LoginBtn"
+                    Text="Log In"
+                    SemanticProperties.Hint="Click to log in"
+                    Clicked="OnLoginClicked"
+                    HorizontalOptions="Center" />
+
+                <WebView x:Name="WebViewInstance" />
+            </StackLayout>
+
+            <StackLayout
+                x:Name="HomeView"
+                IsVisible="false">             
+
+                <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+                <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="NameLabel"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="User's name"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+                <Label 
+                x:Name="EmailLabel"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="User's email"
+                FontSize="18"
+                HorizontalOptions="Center" />           
+
+                <Button 
+                x:Name="LogoutBtn"
+                Text="Log Out"
+                SemanticProperties.Hint="Click to log out"
+                Clicked="OnLogoutClicked"
+                HorizontalOptions="Center" />
+
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
